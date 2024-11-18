@@ -73,22 +73,25 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## JSON Schema Example
 
    {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "properties": {
-    "username": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 30
+  "formTitle": "Contact Us",
+  "fields": [
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Name",
+      "required": true
     },
-    "email": {
-      "type": "string",
-      "format": "email"
+    {
+      "id": "email",
+      "type": "email",
+      "label": "Email",
+      "required": true
     },
-    "password": {
-      "type": "string",
-      "minLength": 8
+    {
+      "id": "message",
+      "type": "textarea",
+      "label": "Message",
+      "required": true
     }
-  },
-  "required": ["username", "email", "password"]
+  ]
 }
