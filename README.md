@@ -1,3 +1,6 @@
+# Dyamic Form Generator 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +47,48 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+ 
+
+## Local Development Setup
+
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm (Node Package Manager)
+- Git
+- A code editor (e.g., Visual Studio Code)
+
+### Installation Steps
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-repo/your-project.git
+   cd your-project
+
+## Install Dependencies 
+  npm install 
+
+## Run the Application
+   npm start
+
+## JSON Schema Example
+
+   {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 30
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "password": {
+      "type": "string",
+      "minLength": 8
+    }
+  },
+  "required": ["username", "email", "password"]
+}
